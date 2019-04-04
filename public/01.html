@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: #90c0f1;
+            position: relative;
+            overflow: hidden;
+        }
+        .boss{
+            width: 160px;
+            margin: 100px auto;
+            position: relative;  
+            animation: up 1s linear a;
+        }
+        .dbody{
+            width: 140px;
+            height: 180px;
+            background: #fff;
+            border-radius: 100% 100% 0 0;
+        }
+        .eye{
+            width: 15px;
+            height: 20px;
+            border-radius: 100%;
+            background: #061e74;
+            border: 2px solid #061e74;
+            box-shadow: inset -2px -2px #fff;
+            position: absolute;
+            top: 60px;
+        }
+        .left{
+            left: 45px;
+        }
+        .right{
+            right: 45px;
+        }
+        .mouth{
+            width: 15px;
+            height: 20px;
+            border-radius: 100%;
+            border: 2px solid #061e74;
+            position: absolute;
+            top: 90px;
+            left: 70px;
+        }
+        .wave{
+            position: absolute;
+            width: 140px;
+            height: 20px;
+            background-size: 25px 20px;
+            border-image:radial-gradient(circle at 50% 0%,#fff,71%,transparent 71%) 
+        }
+        .dow{
+            width: 140px;
+            height: 10px;
+            border-radius: 100%;
+            background: #061e74;
+            opacity: 0.3;
+            margin-top:70px; 
+        }
+        @keyframes up{
+            from{margin-top:100px; }
+            to{margin-top: 70px;}
+        }
+        @keyframes dow{
+            from{margin-top:70px; opacity: 0.3;}
+            to{margin-top: 100px;opacity: 0.1;}
+        }
+    </style>
+</head>
+<body>
+    <div class="boss">
+        <div class="dbody"></div>
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="mouth"></div>
+        <div class="wave"></div>
+        <div class="dow"></div>
+    </div>    
+   <script type="text/javascript">
+    
+   </script>
+</body>
+</html>
