@@ -315,7 +315,7 @@
         var uid=sessionStorage.getItem("id");
         // 获取用户名
         $.ajax({
-            url:"http://127.0.0.1:3000/content/username",
+            url:"content/username",
             type:"get",
             data:{
                 uid
@@ -327,7 +327,7 @@
         })
         // 获取用户商品列表
         $.ajax({
-            url:"http://127.0.0.1:3000/content/usercart",
+            url:"content/usercart",
             type:"get",
             data:{uid},
             dataType:"json",
@@ -415,7 +415,7 @@
             $(".clear").click(function(){
                 var $id=$(this).attr("id");
                 $.ajax({
-                    url:"http://127.0.0.1:3000/content/removeProduct",
+                    url:"content/removeProduct",
                     type:"get",
                     data:{id:$id},
                     dataType:"json",
@@ -431,7 +431,7 @@
         $(".removeAll").click(function(){
             var uid=sessionStorage.getItem("id");
             $.ajax({
-                url:"http://127.0.0.1:3000/content/removeAll",
+                url:"content/removeAll",
                 type:"get",
                 data:{uid},
                 dataType:"json"
